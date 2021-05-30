@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contacto - GALA
+    </title>
+    <link rel="shorcut icon" href="img/ico.ico">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Rajdhani:wght@300&display=swap"
+        rel="stylesheet">
+
+        <meta name="description" content="Gala Indumentaria ropa femenina en Rosario venta online">
+        <meta name="keywords"  content="gala ind, gala indumentaria, gala, ropa gala, gala rosario, rosario ropa femenina, gala indumentaria contacto">
+</head>
+
+<body>
+
+    <body>
+        <header class="logo">
+            <a href="index.html">
+                <img src="logo/galaLogo.png" height="120px" width="350px" alt="Logo GALA INDUMENTARIA">
+            </a>
+        </header>
+        <header class="header-nav">
+
+            <nav class="navegacion">
+                <ul class="desktop-nav">
+                    <li class="desktop-nav-item first"><a href="index.html" class="desktop-nav-link">
+                            Inicio
+                        </a>
+                    </li> <!-- va a la misma página -->
+
+                    <li class="desktop-nav-item selected">
+                        <a href="productos.html" class="desktop-nav-link">
+                            Productos
+                        </a>
+
+                        <ul class="submenu">
+                            <li class="desktop-nav-item">
+                                <a href="#">
+                                    Remeras y Tops
+                                </a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="#">
+                                    Buzos y Sweaters
+                                </a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="#">
+                                    Shorts y Polleras
+                                </a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="#">
+                                    Vestidos y Monos
+                                </a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="#">
+                                    Camisas
+                                </a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="#">
+                                    Mallas
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="how.html" class="nav-enlace">Cómo comprar</a></li>
+                    <li class="desktop-nav-item"><a href="contacto.html" class="desktop-nav-link">
+                            Contacto
+                        </a>
+                    </li>
+            </nav>
+
+            <nav class="registro">
+                <ul class="menu">
+                    <li><a href="crear.html" class="nav-enlace">Crear Cuenta</a></li>
+                    <li>|</li>
+                    <li><a href="iniciar.html" class="nav-enlace">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="contacto.php" method="get">
+            <nav class=contactForm>
+                <label for="texto">NOMBRE</label>
+                <input type="text" placeholder="" value="" required>
+
+                <br>
+                <br>
+
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="" value="" required>
+
+                <br>
+                <br>
+
+                <label for="telefono">TELEFONO (Opcional)</label>
+                <input type="text" placeholder="" value="">
+
+                <br>
+                <br>
+
+                <label for="mensaje">MENSAJE (Opcional)</label>
+                <textarea name="mensaje" cols="40" rows="4" minlength="5" maxlength="200"></textarea>
+
+                <br>
+                <br>
+
+                <!-- Menú desplegable 
+             <select name = "provincia">
+                <option selected value="0">Provincia</option>
+                <option value="1">Santa Fe</option>
+                <option value="2">Buenos Aires</option>
+                <option value="3">Córdoba</option>
+                <option value="4">Otra</option>
+            </select>
+            <br>
+            <br>-->
+
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="VACIAR">
+
+                <br>
+                <br>
+            </nav>
+
+            <footer class="pie">
+                ENVÍOS A TODO EL PAÍS! - Hasta 12 cuotas sin interés
+                <br>
+                <a href="http://www.instagram.com/gala.ind.rosario/" class="desktop-nav-link">
+                    Seguinos en Instagram
+                </a>
+            </footer>
+        </form>
+    </body>
+
+</html>
