@@ -1,0 +1,440 @@
+@charset "UTF-8";
+/* 
+Se puede asignar CSS mediante: 
+
+Etiqueta -> h1 { propiedad: valor; }
+Clase -> .clase { propiedad: valor; }
+ID -> #id {propiedad: valor; }
+
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Para que no haya diferencias de tamaño entre navegadores y se vea igual en cualquier entorno*/
+@media (min-width: 360px) and (max-width: 767px) {
+  body {
+    background-image: url("img/whiteback.png");
+    border: 2px solid white;
+    background-color: white; }
+  .navegacion {
+    width: 250px;
+    margin: 10px auto;
+    text-align: center; }
+    .navegacion ul {
+      list-style: none; }
+  .desktop-nav > li {
+    position: relative;
+    display: inline-block; }
+    .desktop-nav > li > a {
+      display: block;
+      padding: 15px 10px;
+      font-size: 21px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none;
+      margin-left: 10px;
+      text-align: center; }
+  .desktop-nav li a:hover {
+    background: #fd979d;
+    transition: all .4s;
+    letter-spacing: 2px;
+    /* para que no se vea tan brusco el cambio */
+    /* transform: scale(1.25,1); */ }
+  .desktop-nav li:hover .submenu {
+    display: block; }
+  .submenu {
+    position: absolute;
+    background: white;
+    width: 130%;
+    display: none; }
+    .submenu li a {
+      display: block;
+      padding: 15px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none; }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* position: sticky; */
+    top: 20px;
+    background-image: url("img/whiteback.png"); }
+  .logo {
+    margin: auto;
+    text-align: center; }
+  .registro {
+    width: 1000px;
+    margin: 30px auto; }
+    .registro ul {
+      list-style: none; }
+  .menu > li {
+    position: relative;
+    display: inline-block;
+    color: black; }
+    .menu > li > a {
+      display: block;
+      padding: 15px 20px;
+      font-size: 14px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none; }
+  .menu li a:hover {
+    background: #fd979d;
+    transition: all .5s;
+    /* para que no se vea tan brusco el cambio */
+    letter-spacing: 2px; }
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .pie {
+    text-align: center;
+    background: #fd979d;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif; }
+    .pie a {
+      color: white; }
+    .pie:hover {
+      animation-duration: 1.5s;
+      animation-name: aparecer;
+      transition: all .5s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .contactForm, .createForm, .loginForm {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px; }
+  .prodImg {
+    text-align: right; }
+  /* img:hover {
+        opacity: 0.8;
+    } */
+  .how {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px; }
+  .list {
+    display: grid;
+    grid-template-rows: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 15%;
+    left: 20px; }
+    .list ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .list li {
+      padding: 12px;
+      margin-bottom: 7px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      display: flex;
+      justify-content: right; }
+      .list li:hover {
+        background: #fd979d;
+        transition: all .5s;
+        /* para que no se vea tan brusco el cambio */
+        letter-spacing: 2px; }
+  li > a {
+    text-decoration: none;
+    color: black; }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-image: url("img/whiteback.png");
+    border: 2px solid white;
+    background-color: white; }
+  .navegacion {
+    width: 2000px;
+    margin: 30px auto;
+    text-align: center; }
+    .navegacion ul {
+      list-style: none; }
+  .desktop-nav > li {
+    position: relative;
+    display: inline-block; }
+    .desktop-nav > li > a {
+      display: block;
+      padding: 15px 10px;
+      font-size: 21px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none;
+      margin-left: 10px;
+      text-align: center; }
+  .desktop-nav li a:hover {
+    background: #fd979d;
+    transition: all .4s;
+    letter-spacing: 2px;
+    /* para que no se vea tan brusco el cambio */
+    /* transform: scale(1.25,1); */ }
+  .desktop-nav li:hover .submenu {
+    display: block; }
+  .submenu {
+    position: absolute;
+    background: white;
+    width: 130%;
+    display: none; }
+    .submenu li a {
+      display: block;
+      padding: 15px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none; }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 20px;
+    background-image: url("img/whiteback.png"); }
+  .logo {
+    margin: auto;
+    text-align: center; }
+  .registro {
+    width: 1000px;
+    margin: 30px auto; }
+    .registro ul {
+      list-style: none; }
+  .menu > li {
+    position: relative;
+    display: inline-block;
+    color: black; }
+    .menu > li > a {
+      display: block;
+      padding: 15px 20px;
+      font-size: 14px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none; }
+  .menu li a:hover {
+    background: #fd979d;
+    transition: all .5s;
+    /* para que no se vea tan brusco el cambio */
+    letter-spacing: 2px; }
+  .img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .pie {
+    text-align: center;
+    background: #fd979d;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif; }
+    .pie a {
+      color: white; }
+    .pie:hover {
+      animation-duration: 1.5s;
+      animation-name: aparecer;
+      transition: all .5s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .contactForm, .createForm, .loginForm {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px; }
+  .prodImg {
+    text-align: right; }
+  /* img:hover {
+        opacity: 0.8;
+    } */
+  .how {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px; }
+  .list {
+    display: grid;
+    grid-template-rows: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 15%;
+    left: 20px; }
+    .list ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .list li {
+      padding: 12px;
+      margin-bottom: 7px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      display: flex;
+      justify-content: right; }
+      .list li:hover {
+        background: #fd979d;
+        transition: all .5s;
+        /* para que no se vea tan brusco el cambio */
+        letter-spacing: 2px; }
+  li > a {
+    text-decoration: none;
+    color: black; } }
+
+@media (min-width: 992px) {
+  body {
+    background-image: url("img/whiteback.png");
+    border: 2px solid white;
+    background-color: white; }
+  .navegacion {
+    width: 2500px;
+    margin: 30px auto;
+    text-align: center; }
+    .navegacion ul {
+      list-style: none; }
+  .desktop-nav > li {
+    position: relative;
+    display: inline-block; }
+    .desktop-nav > li > a {
+      display: block;
+      padding: 15px 10px;
+      font-size: 21px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none;
+      margin-left: 10px;
+      text-align: center; }
+  .desktop-nav li a:hover {
+    background: #fd979d;
+    transition: all .4s;
+    letter-spacing: 2px;
+    /* para que no se vea tan brusco el cambio */
+    /* transform: scale(1.25,1); */ }
+  .desktop-nav li:hover .submenu {
+    display: block; }
+  .submenu {
+    position: absolute;
+    background: white;
+    width: 130%;
+    display: none;
+    position: relative;
+    z-index: 1000; }
+    .submenu li a {
+      display: block;
+      padding: 15px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none; }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 20px;
+    background-image: url("img/whiteback.png"); }
+  .logo {
+    margin: auto;
+    text-align: center; }
+  .registro {
+    width: 1000px;
+    margin: 30px auto; }
+    .registro ul {
+      list-style: none; }
+  .menu > li {
+    position: relative;
+    display: inline-block;
+    color: black; }
+    .menu > li > a {
+      display: block;
+      padding: 15px 20px;
+      font-size: 14px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      text-decoration: none; }
+  .menu li a:hover {
+    background: #fd979d;
+    transition: all .5s;
+    /* para que no se vea tan brusco el cambio */
+    letter-spacing: 2px; }
+  .img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .pie {
+    text-align: center;
+    background: #fd979d;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif; }
+    .pie a {
+      color: white; }
+    .pie:hover {
+      animation-duration: 1.5s;
+      animation-name: aparecer;
+      transition: all .5s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .contactForm, .createForm, .loginForm {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px; }
+  .prodImg {
+    text-align: right; }
+  /* img:hover {
+        opacity: 0.8;
+    } */
+  .how {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px; }
+  .list {
+    display: grid;
+    grid-template-rows: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 15%;
+    left: 20px; }
+    .list ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .list li {
+      padding: 12px;
+      margin-bottom: 7px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      display: flex;
+      justify-content: right; }
+      .list li:hover {
+        background: #fd979d;
+        transition: all .5s;
+        /* para que no se vea tan brusco el cambio */
+        letter-spacing: 2px; }
+  li > a {
+    text-decoration: none;
+    color: black; }
+  .carousel {
+    text-align: center; } }
