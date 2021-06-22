@@ -240,6 +240,34 @@ ID -> #id {propiedad: valor; }
         height: 100%;
       }
 
+      .new {
+        text-align: center;
+        background: #fd979d;
+        padding: 15px;
+        margin: 5px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+    }
+    
+    .new a {
+        color: white;
+        font-weight: bold;
+    }
+    
+   .new:hover{
+        animation-duration: 1.5s;
+        animation-name: aparecer; 
+        transition: all .5s; 
+    }
+
+    .pijamas {
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+    }
+    
 }
 
 @media(min-width: 768px) and (max-width: 991px){
@@ -277,6 +305,8 @@ ID -> #id {propiedad: valor; }
           text-decoration: none;
           margin-left: 10px;
           text-align: center;
+          left:0px;
+   top:60px;
       }
      
       .desktop-nav li a:hover {
@@ -418,6 +448,10 @@ ID -> #id {propiedad: valor; }
     /* img:hover {
         opacity: 0.8;
     } */
+
+    .how a {
+        color: white;
+    }
     
     .how{
         text-align: center;
@@ -426,6 +460,7 @@ ID -> #id {propiedad: valor; }
         font-family: 'Rajdhani', sans-serif;
         font-size: 20px;
     } 
+
     
     .list {
         display: grid;
@@ -510,6 +545,7 @@ ID -> #id {propiedad: valor; }
     
       .desktop-nav li:hover .submenu{
         display: block;
+        
       }
     
       .submenu {
@@ -518,7 +554,6 @@ ID -> #id {propiedad: valor; }
           width: 130%;
           display: none;
           position: relative;
-          z-index: 1000;
       }
     
       .submenu li a {
@@ -594,11 +629,11 @@ ID -> #id {propiedad: valor; }
         color: white;
     }
     
-    .pie:hover{
+   /* .pie:hover{
         animation-duration: 1.5s;
         animation-name: aparecer; 
         transition: all .5s; 
-    }
+    } */
     
     @keyframes aparecer {
         0% {
@@ -641,13 +676,44 @@ ID -> #id {propiedad: valor; }
         opacity: 0.8;
     } */
     
-    .how{
+    .how > h1 {
         text-align: center;
-        font-size: 20px;
+        color: black;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 30px;
+        
+    } 
+
+    .how > h2 {
+        text-align: center;
+        color: black;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 25px;
+        margin: 20px;
+    } 
+
+    .how > p {
+        text-align: center;
         color: black;
         font-family: 'Rajdhani', sans-serif;
         font-size: 20px;
-    } 
+    }
+
+    .how > h3 { 
+        text-align: center;
+        color: black;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .how > h4 { 
+        text-align: center;
+        color: black;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 15px;
+        margin: 20px;
+    }
     
     .list {
         display: grid;
@@ -688,6 +754,73 @@ ID -> #id {propiedad: valor; }
     .carousel {
         text-align: center;
     }
+
+    .carousel-control-prev, .carousel-control-next {
+        height: 40px;
+        width: 40px;
+        outline: white;
+        background-color: rgba(252, 103, 135, 0.911);
+        background-size: 10%, 10%;
+        border-radius: 50%;
+        border: 1px solid #fd979d;
+    }
+
+    .pulover {
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .vestidos {
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mallas {
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .new {
+        text-align: center;
+        background: #fd979d;
+        padding: 15px;
+        margin: 5px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+    }
+    
+    .new a {
+        color: white;
+        font-weight: bold;
+    }
+    
+   .new:hover{
+        animation-duration: 1.5s;
+        animation-name: aparecer; 
+        transition: all .5s; 
+    }
+
+    .pijamas {
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
 }
 
 
