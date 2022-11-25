@@ -1,6 +1,7 @@
 
 #### Proyecto desarrollado para el curso de Desarrollo Web en Coderhouse ___(Marzo - Junio de 2021)___ 
- El objetivo del proyecto es la creación de una página web con contenido a elección. Por mi parte, elegí un emprendimiento familiar de indumentaria femenina llamado __GALA Indumentaria__.
+ El objetivo del proyecto es la creación de una página web con contenido a elección. 
+ __GALA Indumentaria__.
 ------------------------------------
 ### :wrench: Tecnologias Utilizadas: ####
 
